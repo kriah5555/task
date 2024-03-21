@@ -46,7 +46,7 @@
     </style>
 </head>
 <body>
-    <h1>Invoice Number:</h1>
+    <h1>Invoice Number: {{$invoice}}</h1>
 
     <form action="{{  route('purchases.store') }}" method="POST"id="purchase_form">
     <button type="submit">Save</button>

@@ -33,7 +33,8 @@ class PurchaseController extends Controller
         $categoryCodes            = $categoryCodesWithDetails['category_codes'];
         $codeDetails              = $categoryCodesWithDetails['code_details'];
         $GST                      =  $this->categoryService->getGst();
-        return view('purchase-form', compact('categories', 'categoryCodes', 'codeDetails', 'GST'));
+        $invoice                  = Purchase::latest()->first()->id;
+        return view('purchase-form', compact('categories', 'categoryCodes', 'codeDetails', 'GST', 'invoice'));
     }
 
     /**
