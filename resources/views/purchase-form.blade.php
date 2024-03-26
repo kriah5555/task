@@ -140,7 +140,7 @@
         var categoryId = categorySelect.value;
         var codeSelect = categorySelect.parentElement.nextElementSibling.querySelector('select[name="item_code[]"]');
         var descriptionInput = codeSelect.parentElement.nextElementSibling.querySelector('input[name="description[]"]');
-        var unitsInput = descriptionInput.parentElement.nextElementSibling.querySelector('input[name="description[]"]');
+        var unitsInput = descriptionInput.parentElement.nextElementSibling.querySelector('input[name="units[]"]');
         
         // Clear existing options
         codeSelect.innerHTML = '';

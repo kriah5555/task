@@ -20,7 +20,8 @@ class PurchaseController extends Controller
      */
     public function index()
     {
-        //
+        $purchases = Purchase::whereNotNull('category')->whereNotNull('item_code')->get();
+        return view('purchase-form-index', compact('purchases'));
     }
 
     /**
