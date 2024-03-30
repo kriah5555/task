@@ -51,7 +51,7 @@
     <form action="{{  route('purchases.store') }}" method="POST"id="purchase_form">
     <button type="submit">Save</button>
 
-        @csrf <!-- Laravel CSRF protection token -->
+        @csrf
 <h1>
 </h1>
         <!-- Initial Purchase Row -->
